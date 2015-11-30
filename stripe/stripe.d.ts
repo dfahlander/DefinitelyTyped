@@ -58,6 +58,8 @@ interface StripeCardData {
     address_state?: string;
     address_zip?: string;
     address_country?: string;
+    id?: string;
+    brand?: string;    
 }
 
 declare var Stripe: StripeStatic;
