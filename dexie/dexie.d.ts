@@ -3,6 +3,9 @@
 // Definitions by: David Fahlander <http://github.com/dfahlander>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
+// NOTICE: This file is no longer maintained here.
+// From Dexie v1.3.0 and forth, use the built-in typings in the dexe npm package.
+
 interface Thenable<R> {
     then<U>(onFulfilled: (value: R) => Thenable<U>, onRejected: (error: any) => Thenable<U>): Thenable<U>;
     then<U>(onFulfilled: (value: R) => Thenable<U>, onRejected?: (error: any) => U): Thenable<U>;
